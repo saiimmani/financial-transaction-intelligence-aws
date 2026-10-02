@@ -1,0 +1,9 @@
+Rules = [
+    IsComplete "transaction_id",
+    IsComplete "transaction_timestamp",
+    IsComplete "sender_account",
+    IsComplete "receiver_account",
+    IsComplete "amount",
+    IsUnique "transaction_id",
+    ColumnValues "amount" > 0
+]
